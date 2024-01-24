@@ -1,0 +1,153 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width:100%;
+}
+#main{
+    height:100%;
+    width:100%;
+    background-image: url(https://images.unsplash.com/photo-1501436513145-30f24e19fcc8?q=80&w=1888&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-size: cover;
+    background-position:center;
+    display: flex;
+    overflow: hidden;
+}
+#main #nav{
+    width: 100%;
+    padding: 40px 60px;
+    position:absolute;
+    display: flex;
+    z-index: 99999;
+}
+#main #nav #logo{
+    width:75%;
+    color:#fff
+    /* display: flex;
+    justify-content: flex-end; */
+}
+#main #nav #nitems{
+    width:25%;
+    display: flex;
+    justify-content: flex-end;
+    justify-content: space-between;
+}
+#main #nav #nitems a{
+    text-decoration: none;
+    color:#fff;
+}
+#main #nav #nitems a:nth-child(1){
+    padding-bottom: 5px;
+    border-bottom: 3px solid #fff;
+}
+#main #left{
+    width: 25%;
+    height: 100%;
+    padding:0 60px;
+    background-color: #00000056;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 35px;
+    position:relative;
+    
+}
+#left #place{
+    color:#fff;
+    width:100%;
+}
+#left #place h4{
+    font-size: 18px;
+    border-bottom:1px solid #fff;
+    display: inline-block;
+}
+#left #place:nth-child(2) h4{
+    font-size: 50px;
+    white-space: nowrap;
+}
+#left #place h6{
+    opacity: .8;
+    font-size: 12px;
+}
+#left #place:nth-child(2) h6{
+    font-size: 20px;
+    white-space: nowrap;
+    opacity: .8;
+}
+#left #scroll{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    color: #fff;
+    gap:5px;
+    bottom:-3%;
+    left:50%;
+    transform-origin: 0 50%;
+    transform: translate(-50%,0)rotate(-90deg);
+    /* transform: rotate(-90deg); */
+}
+#scroll #line{
+    width:100px;
+    height: 1.5px;
+    background-color:#fff;
+
+}
+#main #right{
+    width: 75%;
+    height: 100%;
+    /* background-color: red; */
+}
+#right #location{
+    position: absolute;
+    top:50%;
+    right:5%;
+    transform: translate(0,-50%);
+    text-align:right;
+    color:#fff;
+}
+#location h3{
+    font-size: 30px;
+    font-weight:300;
+    line-height: 1;
+}
+
+#location h1{
+    font-size: 150px;
+    /* line-height: 1; */
+    font-weight: 400;
+}
+#location #input{
+ display: flex;
+ align-items: center;
+ justify-content: flex-start;
+ gap: 10px;    
+ border-bottom:3px solid #ffff;
+}
+#input i{
+    font-size: 25px;
+}
+#location #input input{
+    /* width: 100%; */
+    height: auto;
+    background:transparent;
+    border:none;
+    padding:15px 5px;
+    color:#fff;
+    font-size: 25px;
+    outline: none;
+}
+#input input::placeholder{
+    color:#fff;
+    font-size: 25px;
+}
+#right small{
+    position:absolute;
+    right:5%;
+    bottom:5%;
+    font-size:15px;
+    color:#fff;
+}
